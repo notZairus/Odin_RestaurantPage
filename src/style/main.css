@@ -1,3 +1,79 @@
-h1 {
-  color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+  --primary-color: #FFF7F1;
+  --secondary-color: #FFE4C9;
+  font-size: 16px;
+  font-family: "Nunito Sans";
 }
+
+body {
+  margin: 0px;
+  background-color: var(--primary-color);
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+header {
+  background-color: var(--secondary-color);
+  height: 100px;
+  width: 100%;
+  border-bottom: 3px solid rgb(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0px 40px;
+}
+
+header div {
+  flex: 1;
+}
+
+header .logo-container p {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+header nav {
+  flex: 2;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0px;
+}
+
+nav ul button {
+  font-size: 2rem;
+  border: none;
+  background-color: transparent;
+  padding: 5px 20px;
+
+  transition: all 0.5s;
+}
+
+nav ul button:hover {
+  color: var(--secondary-color);
+  background-color: black;
+  border-radius: 2rem;
+}
+
+#content {
+  flex:1;
+  background-color: var(--primary-color);
+  display: flex;
+  padding: 0px 30px;
+  background: linear-gradient(10deg, var(--primary-color), var(--secondary-color))
+}
+
+#home {
+  flex: 1;
+  background-color: blue;
+}
+
+
