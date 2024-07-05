@@ -52,7 +52,7 @@ nav ul button {
   border: none;
   background-color: transparent;
   padding: 5px 20px;
-
+  cursor: pointer;
   transition: all 0.5s;
 }
 
@@ -120,6 +120,7 @@ nav .active {
   border-radius: 2rem;
   background-color: transparent;
   color: var(--secondary-color); 
+  cursor: pointer;
 
   transition:  all 0.5s;
 }
@@ -146,8 +147,7 @@ nav .active {
 
 #menu h1 {
   text-align: center;
-  font-size: 4rem;
-  margin: 20px 0px 0px;
+  font-size: 2.5rem;
 }
 
 .menu-container {
@@ -208,4 +208,30 @@ nav .active {
   text-align: center;
   font-size: 1.1rem;
   margin-top: 5px;
+}
+
+#contact {
+  background-color: var(--primary-color);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+#contact h1 {
+  font-size: 2.5rem;
+}
+
+#contact .contact-container {
+  background-color: var(--secondary-color);
+  width: 50%;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  border-radius: 2rem;
+}
+
+.contact-container h2{
+  font-size: 2rem;
+  text-align: center;
 }

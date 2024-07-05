@@ -3,6 +3,7 @@ import '../style/main.css';
 //sections to attach base on nav-btn
 import { attachHome } from './home';
 import { attachMenu } from './menu';
+import { attachContact } from './contact';
 
 //components
 import { content } from './components';
@@ -40,5 +41,6 @@ navigations.addEventListener('click', (event) => {
     while (content.firstChild) {
       content.removeChild(content.firstChild);
     }
+    content.appendChild(attachContact());
   }
 })
